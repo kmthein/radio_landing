@@ -1,3 +1,4 @@
-.inner-wrapper {
-    
+.l-wrap-inner {
+    @include setMaxWidth();
+    margin: 0 auto;
 }
