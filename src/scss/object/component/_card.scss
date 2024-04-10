@@ -33,6 +33,11 @@
             line-height: 21px;
             padding: 0 0 30px;
         }
+
+        .japan{
+            width: 92%;
+        }
+
     }
 }
 
@@ -80,6 +85,25 @@
 
     padding: 30px 30px 10px 30px;
 
+    // &__about1{
+        
+    // }
+    // &__about2{
+
+    // }
+    // &__about3{
+        
+    // }
+    // &__about4{
+        
+    // }
+    // &__about5{
+        
+    // }
+    // &__about6{
+        
+    // }
+
     p{
         padding: 15px  0 20px 0;
         
@@ -123,4 +147,18 @@
 
 .sec-img-box{
     margin-top: 41px;
+}
+
+.p-activities{
+    &__item{
+        .sec-img{
+            width: 74% ;
+        }
+        .third-img{
+            width: 70%;
+        }
+        .fourth-img{
+            width: 71%;
+        }
+    }
 }
