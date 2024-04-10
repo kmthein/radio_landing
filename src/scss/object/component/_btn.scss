@@ -16,11 +16,20 @@
 }
 
 .bottom-btn{
-    position: relative;
-    left: 420px;
-    margin: 60px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
+    margin-top: 60px;
 
     .warning-btn{
         background: $yellowColor;
     }
 }
+
+// -------------------------=================================
+.blank{
+    height: 200px;
+
+}
+// -------------------------=================================
