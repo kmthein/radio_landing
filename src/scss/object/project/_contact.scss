@@ -1,0 +1,24 @@
+.contact {
+    background: #0A0D13;
+}
+.contact-container {
+    height: 500px;
+    padding: 200px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .contact__info {
+        h2 {
+            margin-bottom: 32px;
+        }
+    }
+    h2 {
+        @include playFairFont(700);
+        font-size: 34px;
+        line-height: 1.4;
+    }
+    p {
+        @include muliFont();
+        font-size: 18px;
+    }
+}

@@ -30,6 +30,7 @@
     "imagemin-optipng": "^8.0.0",
     "imagemin-pngquant": "^9.0.2",
     "imagemin-svgo": "^10.0.1",
+    "jquery": "^3.7.1",
     "mini-css-extract-plugin": "^2.8.1",
     "node-sass-package-importer": "^5.3.3",
     "normalize.css": "^8.0.1",

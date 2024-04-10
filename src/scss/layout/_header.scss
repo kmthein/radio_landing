@@ -48,3 +48,19 @@
         }
     }
 }
+@media screen and (max-width: 1163px) {
+    .l-header {
+        &__menu {
+            ul {
+                gap: 30px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 920px) {
+    .l-header {
+        &__menu {
+            display: none;
+        }
+    }
+}
