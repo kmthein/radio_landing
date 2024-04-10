@@ -1,0 +1,98 @@
+
+// First card section start -------------------------------
+.c-card--container{
+    display: flex;
+    justify-content: center;
+    padding-left: 34px;
+
+    .c-card--img{
+        margin-right: auto;
+        width: 340px;
+    }
+
+    .c-card--lower{
+        margin-top: 60px;
+    }
+
+    .c-card--content{
+        margin-left: 30px;
+        h2{
+            @include playFairFont(700);
+            font-size: 34px;
+            color: $yellowColor;
+            padding: 0 0 12px;
+            margin-top: -111px;
+        }
+        p{
+            @include muliFont(300);
+            font-size: 16px;
+            color: $whiteColor;
+            letter-spacing: 31;
+            line-height: 21px;
+            padding: 0 0 30px;
+        }
+    }
+}
+
+.c-card--title,
+.c-card--item{
+    
+    margin: 120px 0 0 0;
+
+    height: 180px;
+
+    text-align: center;
+    h2{
+        @include  playFairFont (700);
+        font-size: 42px;
+        color: $whiteColor;
+        margin: 0 0 30px 0; 
+    }
+
+    p{
+        @include muliFont (300);
+        font-size: 16px;
+        color: $whiteColor;
+    }
+    
+}
+// // First card section end -------------------------
+
+// // Second card section start ----------------------
+.c-card--grid{
+    margin-right: auto;
+}
+
+.bg-box{
+    background: $aboutBgColor;
+    height: 180px;
+}
+.c-card--traveller{
+    p{
+        padding-bottom: 10px;
+    }
+    &__profile{
+        display: flex;
+        align-items: center;
+
+        padding: 30px 30px 10px 30px;
+        
+
+        span{
+            @include muliFont(300);
+            color: $whiteColor; 
+            font-size: 14px;
+            padding-left: 10px;
+        }
+    }
+    
+
+    &__share{
+        display: flex;
+    }
+}
+
+.content-box{
+    margin: 0 auto;
+    background: $aboutBgColor;
+}

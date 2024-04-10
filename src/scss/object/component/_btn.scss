@@ -1,0 +1,16 @@
+
+.c-btn{
+    border: 1px solid $btnBorderColor;
+    padding: 14px 68px 15px 20px ;
+    color: $btnBorderColor;
+
+    position: relative;
+    img{
+        opacity: .5;
+        margin-bottom: -3px;
+
+        position: absolute;
+        right: 0;
+        margin-right: 20px;
+    }
+}

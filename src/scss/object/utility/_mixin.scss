@@ -1,0 +1,19 @@
+
+@mixin muliFont ($weight: 400) {
+    font-family: "Mulish", sans-serif;
+    font-weight: $weight;
+}
+
+@mixin poppinsFont ($weight: 400) {
+    font-family: "Poppins", sans-serif;
+    font-weight: $weight;
+}
+
+@mixin playFairFont ($weight: 400) {
+    font-family: "Playfair Display", sans-serif;
+    font-weight: $weight;
+}
+
+@mixin setMaxWidth ($maxWidth: 1163px) {
+    max-width: $maxWidth;
+}
