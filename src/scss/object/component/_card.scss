@@ -3,7 +3,8 @@
 .c-card--container{
     display: flex;
     justify-content: center;
-    padding-left: 20px;
+    gap: 40px;
+    flex-wrap: wrap;
 
     .c-card--img{
         margin-right: auto;
@@ -73,6 +74,7 @@
 
 .bg-box{
     background: $aboutBgColor;
+    width: calc(33.3% - 40px);
     // height: 180px;
 
     .travel-blog-img{
@@ -115,7 +117,6 @@
         img{
             position: absolute;
             right: 0;
-            margin-top: 8px;
         }
 
         p{
@@ -151,6 +152,10 @@
 @media screen and (max-width: 1163px) {
     .c-card--container {
         gap: 15px;
+        flex-wrap: wrap;
+        .bg-box {
+            width: calc(50% - 15px);
+        }
     }
     .c-card--img {
         width: 250px;
@@ -159,9 +164,21 @@
         }
     }
 }
+
 @media screen and (max-width: 780px) {
-    .c-card--container
-        {
+    .c-card--container {
+        .c-card--img {
+            margin-right: 0;
+            .bg-box {
+                img {
+                    object-fit: cover;
+                }
+            }
+        }
+        .c-card--lower {
+            margin-left: auto;
+            margin-bottom: 20px;
+        }
         .c-card--content {
             h2 {
                 font-size: 25px;
@@ -170,5 +187,24 @@
                 font-size: 14px;
             }
         }
+}
+}
+@media screen and (max-width: 500px) {
+    .c-card--title {
+        margin-bottom: 10px;
     }
+    .c-card--container {
+        display: block;
+        .bg-box {
+            width: 100%;
+            img {
+                object-fit: cover;
+            }
+        }
+    }
+    .c-card--lower{
+        margin-top: 0;
+        margin-bottom: 60px;
+    }
+
 }

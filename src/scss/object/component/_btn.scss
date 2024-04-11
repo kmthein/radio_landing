@@ -1,29 +1,113 @@
-
 .c-btn{
     border: 1.5px solid $btnBorderColor;
-    padding: 14px 68px 15px 20px ;
-    color: $btnBorderColor;
-
+    width: 196px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    z-index: 5;
     position: relative;
-    img{
-        
-        margin-bottom: -3px;
-
-        position: absolute;
-        right: 0;
-        margin-right: 20px;
+    a {
+        width: 100%;
+        height: 100%;
+        display: inline-flex;
+        align-items: center;
+        padding-left: 20px;
+        color: #000;
+        &::after {
+            position: absolute;
+            top: 0;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            background-color: #E89400;
+            right: 0;
+            padding: 0 13px;
+        }
     }
-}
+    &__explore {
+        background-color: $yellowColor;
+        @include muliFont(700);
+        font-size: 16px;
+        &:hover {
+            background-color: #ec9f19;
+            a {
+                color: #464646;
+                &::after {
+                }
+            }
+        }
+        a {
+            position: relative;
+            &::after {
+                content: url("../img/explore.png");
+            }
+        }
+        img {
+            opacity: 1;
+        }
+        &__bg {
+            background-color: #E89400;
+            width: 35%;
+            height: 100%;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    &__read{
+        background-color: $yellowColor;
+        @include muliFont(700);
+        font-size: 16px;
+        margin-top: 54px;
+            a {
+                &::after {
+                content: url("../img/read_more.png");
+                }
+            }
+        img {
+            opacity: 1;
+        }
+        &:hover {
+            background-color: #ec9f19;
+            a {
+                color: #464646;
+                &::after {
+                }
+            }
+        }
+    }
+    &__discover {
+        @include muliFont(700);
+        font-size: 16px;
+        margin-top: 54px;
+            a {
+                color: $btnBorderColor;
+                &::after {
+                content: url("../img/discover_read.png");
+                background-color: transparent;
+                padding-top: 2px;
+                opacity: 0.5;
+                }
+            }
+        img {
+            opacity: 1;
+        }
+        &:hover {
+            background-color: #2b2b2b;
+            a {
+                color: #a2a2a2;
+                &::after {
+                }
+            }
+        }
+    }
+    &__journal {
+        margin: 0 auto;
+        margin-top: 60px;
+    }
+    img{
 
-.bottom-btn{
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-
-    margin-top: 60px;
-
-    .warning-btn{
-        background: $yellowColor;
     }
 }
 
@@ -33,12 +117,10 @@
 /*growing effect for action*/
 
 .glow-on-hover {
-
-    background: $aboutBgColor1;
-    
+    background-color: $bgBlackDarkColor;
 }
 
-.glow-on-hover:before {
+.glow-on-hover::before {
     content: '';
     background: linear-gradient(45deg, #fc1e1e, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
     position: absolute;
@@ -57,6 +139,7 @@
 
 .glow-on-hover:hover:before {
     opacity: 1;
+    
 }
 
 
@@ -64,46 +147,6 @@
     0% { background-position: 0 0; }
     50% { background-position: 400% 0; }
     100% { background-position: 0 0; }
-}
-
-.c-btn{
-    border: 1px solid $btnBorderColor;
-    padding: 14px 68px 15px 20px ;
-    color: $btnBorderColor;
-
-    position: relative;
-    img{
-        opacity: .5;
-        margin-bottom: -3px;
-
-        position: absolute;
-        right: 0;
-        margin-right: 20px;
-    }
-}
-
-.c-explore{
-    background-color: $yellowColor;
-    color: $bgBlackDarkColor;
-    @include muliFont(700);
-    font-size: 16px;
-    top: 50px;
-
-    img {
-        opacity: 1;
-    }
-}
-
-.c-read{
-    background-color: $yellowColor;
-    color: $bgBlackDarkColor;
-    @include muliFont(700);
-    font-size: 16px;
-    top: 50px;
-
-    img {
-        opacity: 1;
-    }
 }
 
 @media screen and (max-width: 780px) {

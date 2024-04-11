@@ -5,6 +5,9 @@
 .third-section {
     margin-bottom: 92px;
 }
+.stopScroll {
+    overflow: hidden;
+}
   
 @media screen and (max-width: 1163px) {
     .l-wrap-inner {
@@ -22,10 +25,16 @@
         padding: 0 40px;
     }
 }
+@media screen and (max-width: 600px) {
+    .l-wrap-inner {
+        @include setMaxWidth(500px);
+        padding: 0 20px;
+    }
+}
 @media screen and (max-width: 450px) {
     .l-wrap-inner {
-        @include setMaxWidth(400px);
-        padding: 0 20px;
+        @include setMaxWidth(350px);
+        padding: 0 10px;
     }
 }
 @media screen and (max-width: 380px) {

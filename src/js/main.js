@@ -36,3 +36,19 @@ $('.gallery__container').slick({
       }
     ]
   })
+
+  const overlay = document.querySelector(".l-header__overlay");
+
+  const menuBtn = document.querySelector(".l-header .sm-nav-menu");
+
+  const closeBtn = document.querySelector(".l-header__overlay .close");
+
+  menuBtn.addEventListener("click", () => {
+    overlay.classList.add("show");
+    document.body.classList.add("stopScroll");
+  });
+
+  closeBtn.addEventListener("click", () => {
+    overlay.classList.remove("show");
+    document.body.classList.remove("stopScroll");
+  });

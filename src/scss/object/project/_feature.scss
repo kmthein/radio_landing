@@ -80,3 +80,31 @@
         }
     }
 }
+@media screen and (max-width: 600px) {
+    .about {
+        background-size: 100%;
+    }    
+    .feature__inner {
+        width: 100%;
+        .number__box {
+            p {
+                width: 100%;
+            }
+        }
+    }
+}
+@media screen and (max-width: 450px) {
+    .about {
+        background-size: cover;
+        background-position: center;
+    } 
+    .feature__inner {
+        .number {
+            flex-direction: column;
+            gap: 10px;
+            &__box {
+                width: auto;
+            }
+        }
+    }
+}
