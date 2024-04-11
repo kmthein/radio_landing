@@ -1,3 +1,71 @@
+
+.c-btn{
+    border: 1.5px solid $btnBorderColor;
+    padding: 14px 68px 15px 20px ;
+    color: $btnBorderColor;
+
+    position: relative;
+    img{
+        
+        margin-bottom: -3px;
+
+        position: absolute;
+        right: 0;
+        margin-right: 20px;
+    }
+}
+
+.bottom-btn{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
+    margin-top: 60px;
+
+    .warning-btn{
+        background: $yellowColor;
+    }
+}
+
+// -------------------------=================================
+// -------------------------=================================
+
+/*growing effect for action*/
+
+.glow-on-hover {
+
+    background: $aboutBgColor1;
+    
+}
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #fc1e1e, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
 .c-btn{
     border: 1px solid $btnBorderColor;
     padding: 14px 68px 15px 20px ;
@@ -35,5 +103,15 @@
 
     img {
         opacity: 1;
+    }
+}
+@media screen and (max-width: 780px) {
+    .c-btn {
+        padding-right: 40px;
+        img {
+            padding-left: 10px;
+            padding-top: 2px;
+            right: auto;
+        }
     }
 }

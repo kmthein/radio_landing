@@ -1,7 +1,5 @@
 .footer{
     text-align: center;
-    padding-top: 119px;
-
     h4{
         a {
             @include poppinsFont(700);
@@ -37,7 +35,7 @@
    .address-container {
        border-top: 1px solid #D8D8D8;
        margin-top: 120px;
-
+       
         
        address {
         padding: 30px;

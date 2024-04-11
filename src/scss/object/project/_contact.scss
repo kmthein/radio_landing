@@ -1,0 +1,26 @@
+.contact {
+    background-image: url("../img/contact_overlay.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.contact-container {
+    height: 500px;
+    margin: 200px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .contact__info {
+        h2 {
+            margin-bottom: 32px;
+        }
+    }
+    h2 {
+        @include playFairFont(700);
+        font-size: 34px;
+        line-height: 1.4;
+    }
+    p {
+        @include muliFont();
+        font-size: 18px;
+    }
+}

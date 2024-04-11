@@ -1,0 +1,15 @@
+.c-page-title {
+    @include setMaxWidth(520px);
+    margin: 0 auto;
+    text-align: center;
+    h2 {
+        @include playFairFont(700);
+        font-size: 42px;
+        margin-bottom: 32px;
+    }
+    p {
+        @include muliFont(300);
+        font-size: 16px;
+        margin-bottom: 54px;
+    }
+}
