@@ -1,0 +1,25 @@
+
+.p-activities{
+    display: flex;
+
+    &__item{
+        width: calc(25%);
+        // width: 100%;
+        p{
+            @include muliFont(300);
+            font-size: 16px;
+            color: $whiteColor;
+            letter-spacing: 31;
+            line-height: 21px;
+            margin: -98px 0 0 20px;
+        }
+        img {
+            width: 100%;
+        }
+        .first-img,
+        .sec-img{
+            width: 72%;
+        }
+    }
+
+}
