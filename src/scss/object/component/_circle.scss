@@ -1,0 +1,24 @@
+.circle {
+    width: 278px;
+    height: 278px;
+    border: 1px solid white;
+    border-radius: 50%;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    img {
+        margin-bottom: 19px;
+    }
+    h2 {
+        margin-bottom: 17px;
+    }
+    p {
+        margin-bottom: 13px;
+    }
+    span {
+        @include muliFont();
+        font-size: 16px;
+    }
+}

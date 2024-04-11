@@ -28,7 +28,6 @@
 }
 
 // -------------------------=================================
-
 // -------------------------=================================
 
 /*growing effect for action*/
@@ -65,4 +64,55 @@
     0% { background-position: 0 0; }
     50% { background-position: 400% 0; }
     100% { background-position: 0 0; }
+}
+
+.c-btn{
+    border: 1px solid $btnBorderColor;
+    padding: 14px 68px 15px 20px ;
+    color: $btnBorderColor;
+
+    position: relative;
+    img{
+        opacity: .5;
+        margin-bottom: -3px;
+
+        position: absolute;
+        right: 0;
+        margin-right: 20px;
+    }
+}
+
+.c-explore{
+    background-color: $yellowColor;
+    color: $bgBlackDarkColor;
+    @include muliFont(700);
+    font-size: 16px;
+    top: 50px;
+
+    img {
+        opacity: 1;
+    }
+}
+
+.c-read{
+    background-color: $yellowColor;
+    color: $bgBlackDarkColor;
+    @include muliFont(700);
+    font-size: 16px;
+    top: 50px;
+
+    img {
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .c-btn {
+        padding-right: 40px;
+        img {
+            padding-left: 10px;
+            padding-top: 2px;
+            right: auto;
+        }
+    }
 }
