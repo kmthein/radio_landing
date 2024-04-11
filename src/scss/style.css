@@ -1,0 +1,272 @@
+/* normalize.css
+------------------------ */
+@import 'normalize.css/normalize.css';
+/* ==========================================================================
+  Utility
+========================================================================== */
+/* ==========================================================================
+  Foundation
+========================================================================== */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-decoration: none;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  background: #0A0D13;
+  color: #FFFFFF;
+}
+
+/* ==========================================================================
+  Layout
+========================================================================== */
+.l-header {
+  background-color: rgba(27, 27, 27, 0.3);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  padding: 27px 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 5;
+  border-bottom: 1px solid #93A0A7;
+}
+.l-header__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.l-header__list h1 a {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  color: #FFFFFF;
+}
+.l-header__menu ul {
+  display: flex;
+  gap: 60px;
+  align-items: center;
+}
+.l-header__menu ul .is-active {
+  color: #F49F0A;
+  font-family: "Mulish", sans-serif;
+  font-weight: 700;
+}
+.l-header__menu ul .is-active::before {
+  content: "";
+  background-color: #F49F0A;
+  position: absolute;
+  bottom: -2px;
+  height: 2px;
+  width: 50px;
+}
+.l-header__menu ul a {
+  font-family: "Mulish", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #FFFFFF;
+  height: 100%;
+}
+
+.footer {
+  text-align: center;
+}
+.footer h4 a {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  color: #FFFFFF;
+}
+.footer .icons {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 20px;
+}
+.footer .list {
+  display: flex;
+  justify-content: center;
+  gap: 63px;
+}
+.l-wrap-inner {
+  max-width: 1163px;
+  margin: 0 auto;
+}
+
+/* ==========================================================================
+  Project
+========================================================================== */
+.mainvisual {
+  background-image: url("../img/mainvisual_bg.png");
+  background-size: 100% 100%;
+  width: 100%;
+  height: 904px;
+  display: flex;
+  align-items: center;
+}
+.mainvisual__info {
+  width: 100%;
+}
+.mainvisual__inner {
+  width: 1163px;
+  margin: 0 auto;
+}
+.mainvisual__inner h2 {
+  font-family: "Playfair Display", sans-serif;
+  font-weight: 700;
+  font-size: 64px;
+  color: #FFFFFF;
+  width: 500px;
+}
+.mainvisual__inner p {
+  font-family: "Mulish", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: #FFFFFF;
+  line-height: 70px;
+  position: relative;
+  padding-left: 80px;
+}
+.mainvisual__inner p::before {
+  content: "";
+  background-color: #FFFFFF;
+  position: absolute;
+  height: 2px;
+  width: 50px;
+  left: 0px;
+  top: 50%;
+}
+
+.feature {
+  display: flex;
+  height: 100%;
+}
+.feature__inner {
+  width: 50%;
+}
+.feature__inner .l-aboutus h3 {
+  font-family: "Playfair Display", sans-serif;
+  font-weight: 700;
+  font-size: 42px;
+  color: #FFFFFF;
+}
+.feature__inner .l-aboutus p {
+  font-family: "Mulish", sans-serif;
+  font-weight: 200;
+  font-size: 16px;
+  color: #FFFFFF;
+  width: 460px;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+.feature__inner .number {
+  display: flex;
+  max-width: 100%;
+}
+.feature__inner .number__box {
+  width: 33.3%;
+  padding: 20px;
+  border: 1px solid #000;
+  background-color: #1F242E;
+  z-index: 3;
+}
+.feature__img {
+  width: 50%;
+  height: 100%;
+}
+.feature__img img {
+  width: 100%;
+  height: 100%;
+}
+
+/* ==========================================================================
+  Component
+========================================================================== */
+.c-btn {
+  border: 1px solid #707070;
+  padding: 14px 68px 15px 20px;
+  color: #707070;
+  position: relative;
+}
+.c-btn img {
+  opacity: 0.5;
+  margin-bottom: -3px;
+  position: absolute;
+  right: 0;
+  margin-right: 20px;
+}
+
+.c-explore {
+  background-color: #F49F0A;
+  color: #0A0D13;
+  font-family: "Mulish", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  top: 50px;
+}
+.c-explore img {
+  opacity: 1;
+}
+
+.c-read {
+  background-color: #F49F0A;
+  color: #0A0D13;
+  font-family: "Mulish", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  top: 50px;
+}
+.c-read img {
+  opacity: 1;
+}/*# sourceMappingURL=style.css.map */
