@@ -26,10 +26,18 @@
 /* ==========================================================================
   Project
 ========================================================================== */
+@import './object//project/mainvisual';
+@import './object//project/gallery';
+@import './object/project/slider';
+@import './object/project/contact';
+@import './object/project/logo';
 @import './object/project/activities';
+@import './object/project/feature';
 
 /* ==========================================================================
   Component
 ========================================================================== */
+@import './object/component/page-title';
+@import './object/component/circle';
 @import './object/component/btn';
 @import './object/component/card';

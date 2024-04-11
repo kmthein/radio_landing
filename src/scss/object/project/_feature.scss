@@ -1,0 +1,82 @@
+.feature {
+        display: flex;
+        height: 100%;
+        align-items: center;
+    &__inner {
+        width: 50%;
+        padding: 122px 0;
+        .l-aboutus{
+            h3{
+                @include playFairFont(700);
+                font-size: 42px;
+                color: $whiteColor;
+                
+            }
+            p{
+                @include muliFont(200);
+                font-size: 16px;
+                color: $whiteColor;
+                margin-top: 30px;
+                margin-bottom: 50px;
+                line-height: 1.4;
+            }
+        }
+        .number {
+            display: flex;
+            max-width: 100%;
+            &__box {
+                width: 33.3%;
+                padding: 0 70px;
+                background-color: $aboutBgColor;
+                z-index: 3;
+                text-align: center;
+                padding-top: 25px;
+                padding-bottom: 31px;
+                position: relative;
+                &::after {
+                    content: "";
+                    position: absolute;
+                    right: 0;
+                    top: 38%;
+                    background-color: #2B313C;
+                    height: 37px;
+                    width: 1px;
+                }
+                h4 {
+                    font-size: 42px;
+                    @include playFairFont();
+                }
+                p {
+                    width: 150px;
+                    margin-bottom: 0;
+                    @include muliFont();
+                    font-size: 18px;
+                    margin-top: 6px;
+                }
+            }
+        }
+    }
+}
+.about {
+    position: relative;
+    background-image: url("../img/about.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 50%;
+}
+@media screen and (max-width: 1163px) {
+    .feature__inner {
+        .number {
+            &__box {
+                padding-left: 35px;
+                padding-right: 35px;
+                h4 {
+                    font-size: 30px;
+                }
+                p {
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+}
