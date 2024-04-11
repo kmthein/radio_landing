@@ -1,24 +1,28 @@
 .feature {
         display: flex;
         height: 100%;
+        align-items: center;
     &__inner {
         width: 50%;
+        height: 70%;
         .l-aboutus{
+                
             h3{
                 @include playFairFont(700);
                 font-size: 42px;
                 color: $whiteColor;
-                
+
             }
 
             p{
                 @include muliFont(200);
                 font-size: 16px;
                 color: $whiteColor;
-                width: 460px;
+                //width: 460px;
                 margin-top: 30px;
                 margin-bottom: 50px;
-
+                line-height: 1.4;
+            
             }
 
             
@@ -27,12 +31,37 @@
         .number {
             display: flex;
             max-width: 100%;
+
             &__box {
                 width: 33.3%;
-                padding: 20px;
-                border: 1px solid #000;
+                padding:0 75px;
+                //border: 1px solid #000;
                 background-color: $aboutBgColor;
                 z-index: 3;
+                position: relative;
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    right: 0;
+                    top: 30%;
+                    background-color:#2B313C;
+                    height: 37px;
+                    width: 1px;
+
+                }   
+
+
+                h4 {
+                    @include playFairFont(400);
+                    font-size: 42px;
+                }
+                p {
+                    @include muliFont(400);
+                    font-size: 18px;
+                    width: 200px;
+                
+                }
             }
         }
     }
