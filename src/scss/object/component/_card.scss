@@ -86,29 +86,13 @@
 
     padding: 30px 30px 10px 30px;
 
-    // &__about1{
-        
-    // }
-    // &__about2{
-
-    // }
-    // &__about3{
-        
-    // }
-    // &__about4{
-        
-    // }
-    // &__about5{
-        
-    // }
-    // &__about6{
-        
-    // }
-
     p{
-        padding: 15px  0 20px 0;
+        padding: 10px  0 5px 0;
+        text-align: left;
+        line-height: 24px;
         
     }
+
     &__profile{
         display: flex;
         align-items: center;
@@ -130,7 +114,7 @@
 
         img{
             position: absolute;
-            right: 30px;
+            right: 0;
         }
 
         p{
