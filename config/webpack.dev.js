@@ -38,7 +38,7 @@ module.exports = merge(common, {
       __dirname,
       '../dist/html'
     ),
-    port: 8089,
+    port: 8088,
     open: true
   }
 });
