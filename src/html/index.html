@@ -9,6 +9,25 @@
   </head>
   <body>
     <div class="container">
+      <div class="l-header__overlay">
+        <div class="l-wrap-inner">
+          <div class="close">
+            <img src="../img/close_button.png" alt="close">
+          </div>
+          <nav class="l-header__menu l-header__menu__sm">
+            <ul>
+              <li><a href="#" target="_self" class="is-active">Home</a></li>
+              <li><a href="#" target="_self">About Us</a></li>
+              <li><a href="#" target="_self">Discover</a></li>
+              <li><a href="#" target="_self">Blog</a></li>
+              <li><a href="#" target="_self">Journals</a></li>
+              <li><a href="#" target="_self">Gallery</a></li>
+              <li><a href="#" target="_self">Contact</a></li>
+              <li><a href="#" target="_self"><img src="../img/search.png" alt="search"></a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
       <header class="l-header">
         <section class="l-header__layout l-wrap-inner">
           <div class="l-header__list">
@@ -39,7 +58,9 @@
           <div class="mainvisual__info">
               <h2>The new way to plan your next</h2>
               <p>Explore the colourful world</p>
-              <a href="#" class="c-btn c-explore">Explore more<img src="../img/explore.png"></a>
+              <div class="c-btn c-btn__explore">
+                <a href="/" target="_self">Explore more</a>
+              </div>
             </div>
         </div>
       </section>
@@ -65,8 +86,8 @@
                 <p>Destinations</p>
               </div>
             </div>
-            <div>
-              <a href="#" class="c-btn c-read">Read More<img src="../img/read_more.png"></a>
+            <div class="c-btn c-btn__read">
+              <a href="/" target="_self">Read more</a>
             </div>
           </div>
             </div>
@@ -93,7 +114,9 @@
 
               <h2>Norway</h2>
               <p>Norway is a Scandinavian country encompassing mountains, glaciers and deep coastal fjords. </p>
-              <a href="#" class="glow-on-hover c-btn">Discover More <img src="../img/Page-2.png"></a>
+              <div class="c-btn c-btn__discover">
+                <a href="/" target="_self">Discover more</a>
+              </div>
 
             </div>
           </div>
@@ -105,8 +128,9 @@
 
               <h2>London</h2>
               <p>London, the capital of England and the United Kingdom, is a 21st-century city with history stretching back to Roman times.</p>
-              <a href="#" class="glow-on-hover c-btn">Discover More <img src="../img/Page-2.png"></a>
-
+              <div class="c-btn c-btn__discover">
+                <a href="/" target="_self">Discover more</a>
+              </div>
             </div>
           </div>
           <!-- card-img 3 -->
@@ -117,8 +141,9 @@
 
               <h2>Japan</h2>
               <p class="japan">Japan is famous for creating the world’s leading electronics and car brands, while remaining deeply connected to traditions.</p>
-              <a href="#" class="glow-on-hover c-btn">Discover More <img src="../img/Page-2.png"></a>
-
+              <div class="c-btn c-btn__discover">
+                <a href="/" target="_self">Discover more</a>
+              </div>
             </div>
           </div>
           
@@ -246,99 +271,90 @@
             </div>
 
           </div>
+
+                    <!-- card-img 4 -->
+                    <div class="c-card--grid bg-box">
+
+                      <img src="../img/travel_blog4.png" class="travel-blog-img">
+                      
+                      <div class="c-card--item content-box">
+          
+                          <div class="c-card--traveller">
+          
+                            <div class="c-card--traveller__profile">
+                              <img src="../img/Ellipse 1.png">
+                              <span>By Austin Martin</span>
+                            </div>
+          
+                            <p class="c-card--traveller__about4">How to use less plastic when you travel.</p>
+                            
+                            <div class="c-card--traveller__share">
+                              <p>18 Apr 2022</p>
+                              <img src="../img/share.png">
+                            </div>
+          
+                          </div>             
+          
+                      </div>
+          
+                    </div>
+                    <!-- card-img 5 -->
+                    <div class="c-card--grid bg-box">
+                      <img src="../img/travel_blog5.png" class="travel-blog-img">
+                      
+                      <div class="c-card--item content-box">
+          
+                        <div class="c-card--traveller">
+                            
+                            <div class="c-card--traveller__profile">
+                              <img src="../img/Ellipse 2.png">
+                              <span>By Mary Ann</span>
+                            </div>
+          
+                            <p class="c-card--traveller__about5">The best weekend road trips from Denver.</p>
+                            
+                            <div class="c-card--traveller__share">
+                              <p>18 Apr 2022</p>
+                              <img src="../img/share.png">
+                            </div>
+                                                
+                          </div>    
+          
+                      </div>
+                    </div>
+                    <!-- card-img 6 -->
+                    <div class="c-card--grid bg-box">
+          
+                      <img src="../img/travel_blog6.png" class="travel-blog-img">
+                      
+                      <div class="c-card--item content-box">
+          
+                        <div class="c-card--traveller">
+                            
+                          <div class="c-card--traveller__profile">
+                            <img src="../img/Ellipse 3.png">
+                            <span>By Austin Martin</span>
+                          </div>
+          
+                          <p class="c-card--traveller__about6">Tips and tricks to plan your next adventure.</p>
+          
+                          <div class="c-card--traveller__share">
+                            <p>18 Apr 2022</p>
+                            <img src="../img/share.png">
+                          </div>
+          
+                        </div>                  
+          
+                      </div>
+          
+                    </div>
           
         </div> 
         
-        <div class="c-card--container sec-img-box">
-
-          <!-- card-img 1 -->
-          <div class="c-card--grid bg-box">
-
-            <img src="../img/travel_blog4.png" class="travel-blog-img">
-            
-            <div class="c-card--item content-box">
-
-                <div class="c-card--traveller">
-
-                  <div class="c-card--traveller__profile">
-                    <img src="../img/Ellipse 1.png">
-                    <span>By Austin Martin</span>
-                  </div>
-
-                  <p class="c-card--traveller__about4">How to use less plastic when you travel.</p>
-                  
-                  <div class="c-card--traveller__share">
-                    <p>18 Apr 2022</p>
-                    <img src="../img/share.png">
-                  </div>
-
-                </div>             
-
-            </div>
-
-          </div>
-          <!-- card-img 2 -->
-          <div class="c-card--grid bg-box">
-            <img src="../img/travel_blog5.png" class="travel-blog-img">
-            
-            <div class="c-card--item content-box">
-
-              <div class="c-card--traveller">
-                  
-                  <div class="c-card--traveller__profile">
-                    <img src="../img/Ellipse 2.png">
-                    <span>By Mary Ann</span>
-                  </div>
-
-                  <p class="c-card--traveller__about5">The best weekend road trips from Denver.</p>
-                  
-                  <div class="c-card--traveller__share">
-                    <p>18 Apr 2022</p>
-                    <img src="../img/share.png">
-                  </div>
-                                      
-                </div>    
-
-            </div>
-          </div>
-          <!-- card-img 3 -->
-          <div class="c-card--grid bg-box">
-
-            <img src="../img/travel_blog6.png" class="travel-blog-img">
-            
-            <div class="c-card--item content-box">
-
-              <div class="c-card--traveller">
-                  
-                <div class="c-card--traveller__profile">
-                  <img src="../img/Ellipse 3.png">
-                  <span>By Austin Martin</span>
-                </div>
-
-                <p class="c-card--traveller__about6">Tips and tricks to plan your next adventure.</p>
-
-                <div class="c-card--traveller__share">
-                  <p>18 Apr 2022</p>
-                  <img src="../img/share.png">
-                </div>
-                
-
-              </div>                  
-
-            </div>
-
-          </div>
-        </div> 
-        <div class="bottom-btn">
-          <a href="#" class="c-btn warning-btn">View all journal <img src="../img/Page-1.png"></a>
+        <div class="c-btn c-btn__read c-btn__journal">
+          <a href="/" target="_self">View all journal</a>
         </div>
-
       </section>
-<!-- ---------------------------------------------- -->
-      <!-- <div class="blank">
-
-      </div> -->
-<!-- ---------------------------------------------- -->
         
       <section class="logo-container">
         <img src="../img/logo.png" alt="logo">  
@@ -444,8 +460,9 @@
         </div>
       </section>
       </main>
+
       <footer>
-        <div class="footer">
+        <div class="l-wrap-inner footer">
           <h4>
             <a href="/">Raido.</a>
           </h4>

@@ -12,3 +12,11 @@
         @include setMaxWidth(500px);
     }
 }
+@media screen and (max-width: 500px) {
+    .logo-container {
+        @include setMaxWidth(350px);
+        img {
+            width: 100%;
+        }
+    }
+}

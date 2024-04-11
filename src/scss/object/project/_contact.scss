@@ -6,6 +6,7 @@
 .contact-container {
     height: 500px;
     margin: 200px auto;
+    margin-bottom: 120px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -22,5 +23,33 @@
     p {
         @include muliFont();
         font-size: 18px;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .contact {
+        min-height: 700px;
+    }
+    .contact-container {
+        .contact__info {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        display: block;
+        .circle {
+            display: block;
+            width: 200px;
+            height: 200px;
+            margin: 0 auto;
+            margin-bottom: 20px;
+            img {
+                margin-top: 35px;
+            }
+            h2 {
+                font-size: 20px;
+            }
+            p, span {
+                font-size: 15px;
+            }
+        }
     }
 }
